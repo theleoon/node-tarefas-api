@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import responsavelSchema from "./Responsavel.js";
+import { responsavelSchema } from "./Responsavel.js";
 
 
 const tarefaSchema = new mongoose.Schema({
@@ -25,4 +25,4 @@ function validarCampoVazio(campoTexto){
     return campoTexto
 }
 
-export default Tarefa;
+export { tarefa, tarefaSchema };

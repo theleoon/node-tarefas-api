@@ -1,4 +1,4 @@
-import tarefa from "../models/Tarefa.js";
+import { tarefa } from "../models/Tarefa.js";
 
 class TarefaController {
 

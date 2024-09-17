@@ -1,10 +1,10 @@
+import mongoose from "mongoose";
 
-class Responsavel {
+const responsavelSchema = new mongoose.Schema({
+        nome: String
+});
 
-    constructor(nome) {
-        this.nome = nome;
-    }
-    
-}
+const responsavel = mongoose.model("responsavel", responsavelSchema);
 
-export default Responsavel;
+export { responsavel, responsavelSchema };
+
