@@ -6,3 +6,5 @@ class Responsavel {
     }
     
 }
+
+export default Responsavel;
