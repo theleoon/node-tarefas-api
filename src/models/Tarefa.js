@@ -8,7 +8,7 @@ const tarefaSchema = new mongoose.Schema({
     prioridade: { type: String },
     data: { type: Date },
     descricao: { type: String },
-    responsaveis: responsavelSchema
+    responsaveis: [ responsavelSchema ]
   }, { versionKey: false });
   
   const tarefa = mongoose.model("tarefas", tarefaSchema);
